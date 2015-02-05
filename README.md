@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/govdelivery/jekyll-nested-menu-generator.svg?branch=master)](https://travis-ci.org/govdelivery/jekyll-nested-menu-generator)
+[![Gem Version](https://badge.fury.io/rb/jekyll-nested-menu-generator.svg)](http://badge.fury.io/rb/jekyll-nested-menu-generator)
+
 jekyll-nested-menu-generator
 =======================
 
