@@ -21,3 +21,46 @@ Or install it manually:
 
     gem install jekyll-nested-menu-generator
 
+## Usage
+
+Say you have a number of pages, organized into folders, some of which are in
+other folders. For example, let's consider a website about music, with pages 
+about albums organized into folders based on artists and year released:
+
+```
+ /
+ |- Albums/ 
+ | |- 1994/
+ | | |- Oasis/
+ | | | |- Definitely_Maybe/
+ | | | | |- index.md
+ | | |- The Offspring/
+ | | | |- Smash/
+ | | | | |- index.md
+ | | |- index.md
+ | |- 1995/
+ | | |- Michael Jackson/
+ | | | |- HIStory_Past_Present_and_Future_Book_I/
+ | | | | |- index.md
+ | | |- Radiohead/
+ | | | |- The_Bends/
+ | | | | |- index.md
+ | | |- index.md
+ | |- 1996/
+ | | |- Jay Z/
+ | | | |- Reasonable_Doubt/
+ | | | | |- index.md
+ | | |- Weezer/
+ | | | |- Pinkerton/
+ | | | | |- index.md
+ | | |- index.md
+ |- index.html
+```
+
+Let's assume that on index.md you would like to include a nested menu of all of
+the pages under Albums. To do this, simply use the 'nested_menu' liquid tag like
+so:
+
+```
+{% nested_menu Albums %}
+```
