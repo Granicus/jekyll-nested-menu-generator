@@ -49,7 +49,7 @@ describe 'nested_menu', fakefs:true do
     FakeFS.deactivate!
   end
 
-  it 'Yields a nested menu of items in the specificed folder' do
+  it 'Yields a nested menu of items in the specified folder' do
     t = Liquid::Template.parse(page)
     o = t.render!({'site' => {
         'pages' => @site.pages,
@@ -57,6 +57,7 @@ describe 'nested_menu', fakefs:true do
       }})
 
     o_obj = Nokogiri::XML.parse(o)
+    binding.pry
     expect(o_obj.xpath('/ul')).not_to be_empty
     expect(o_obj.xpath('/ul/li[1]/a[.="Test!"][@href="/files/one/index.html"]')).not_to be_empty
     expect(o_obj.xpath('/ul/li[2]/a[.="Test!"][@href="/files/two/index.html"]')).not_to be_empty
