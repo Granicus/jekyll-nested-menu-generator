@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version     = '1.0.1'
   s.date        = '2020-08-27'
   s.authors     = ['Granicus']
-  s.email       = 'support@govdelivery.com'
+  s.email       = 'support@granicus.com'
   s.homepage    = 'https://github.com/granicus/jekyll-nested-menu-generator'
   s.license     = 'BSD-3-Clause'
   s.summary     = 'Tag for generating a nested navigation menu.'
