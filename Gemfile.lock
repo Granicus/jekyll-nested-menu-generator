@@ -3,7 +3,6 @@ PATH
   specs:
     jekyll-nested-menu-generator (1.0.1)
       jekyll (>= 3.0)
-      jekyll-sass-converter (= 1.5.2)
 
 GEM
   remote: https://rubygems.org/
