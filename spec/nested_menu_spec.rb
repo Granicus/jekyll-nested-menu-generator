@@ -55,7 +55,7 @@ describe 'nested_menu', fakefs:true do
       }})
 
     o_obj = Nokogiri::XML.parse(o)
-    binding.pry
+   
     expect(o_obj.xpath('/ul')).not_to be_empty
     expect(o_obj.xpath('/ul/li[1]/a[.="Test!"][@href="/files/one/"]')).not_to be_empty
     expect(o_obj.xpath('/ul/li[2]/a[.="Test!"][@href="/files/two/"]')).not_to be_empty
