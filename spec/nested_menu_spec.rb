@@ -57,13 +57,13 @@ describe 'nested_menu', fakefs:true do
     o_obj = Nokogiri::XML.parse(o)
     binding.pry
     expect(o_obj.xpath('/ul')).not_to be_empty
-    expect(o_obj.xpath('/ul/li[1]/a[.="Test!"][@href="/files/one/index.html"]')).not_to be_empty
-    expect(o_obj.xpath('/ul/li[2]/a[.="Test!"][@href="/files/two/index.html"]')).not_to be_empty
-    expect(o_obj.xpath('/ul/li[3]/a[.="Test!"][@href="/files/three/index.html"]')).not_to be_empty
-    expect(o_obj.xpath('/ul/li[1]/ul/li[1]/a[.="Test!"][@href="/files/one/a/index.html"]')).not_to be_empty
-    expect(o_obj.xpath('/ul/li[1]/ul/li[2]/a[.="Test!"][@href="/files/one/b/index.html"]')).not_to be_empty
-    expect(o_obj.xpath('//a[@href="/content/index.html"]')).to be_empty
-    expect(o_obj.xpath('//a[@href="/images/index.html"]')).to be_empty
+    expect(o_obj.xpath('/ul/li[1]/a[.="Test!"][@href="/files/one/"]')).not_to be_empty
+    expect(o_obj.xpath('/ul/li[2]/a[.="Test!"][@href="/files/two/"]')).not_to be_empty
+    expect(o_obj.xpath('/ul/li[3]/a[.="Test!"][@href="/files/three/"]')).not_to be_empty
+    expect(o_obj.xpath('/ul/li[1]/ul/li[1]/a[.="Test!"][@href="/files/one/a/"]')).not_to be_empty
+    expect(o_obj.xpath('/ul/li[1]/ul/li[2]/a[.="Test!"][@href="/files/one/b/"]')).not_to be_empty
+    expect(o_obj.xpath('//a[@href="/content/"]')).to be_empty
+    expect(o_obj.xpath('//a[@href="/images/"]')).to be_empty
 
   end
 end
