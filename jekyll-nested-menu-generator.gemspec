@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.3.0'
 
   s.add_runtime_dependency 'jekyll', '>= 3.0'
-  s.add_runtime_dependency 'jekyll-sass-converter', '1.5.2'
 
   s.files        = `git ls-files`.split($\)
   s.require_paths = ['lib']
