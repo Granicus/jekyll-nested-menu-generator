@@ -18,8 +18,6 @@ describe 'nested_menu', fakefs:true do
     @page = Page.new(@site, source_dir, dir, file)
   end
 
-
-
   let(:page) { '{% nested_menu files %}' }
 
   before(:all) do

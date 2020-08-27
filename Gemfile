@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in jekyll-swfobject.gemspec
+# Specify your gem's dependencies in jekyll-nested-menu-generator.gemspec
 gemspec
 
 group :test do
