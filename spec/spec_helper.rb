@@ -1,6 +1,7 @@
 require 'jekyll'
 require 'rspec'
 require 'nokogiri'
+require 'pry'
 require 'fakefs/spec_helpers'
 require_relative '../lib/jekyll-nested-menu-generator.rb'
 

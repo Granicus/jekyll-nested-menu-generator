@@ -48,7 +48,7 @@ module Jekyll
         menu_hash.each do |dir_name, dir|
           item_string_part = ''
 
-          # Seperate the child pages from other decendent pages
+          # Separate the child pages from other descendent pages
           if dir.is_a?(Jekyll::Page)
             dir_hash = {}
             dir_hash[dir.name] = dir
